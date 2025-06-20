@@ -486,7 +486,7 @@ const Index = () => {
         <section id="solution" ref={el => (routeRefs.current['solution'] = el)} className="py-16 scroll-mt-20">
           <div className="text-center mb-12">
             <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">5️⃣ Proposed Solutions</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How Jar AI Compass Solves These Pain Points</p>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How Jar Compass Solves These Pain Points</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {content.proposedSolutions.map((solution, index) => {
@@ -570,13 +570,17 @@ const Index = () => {
         <section id="success-metrics" ref={el => (routeRefs.current['success-metrics'] = el)} className="py-16 bg-white rounded-2xl shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">8️⃣ Success Metrics</h2>
+              <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">8️⃣ SUCCESS METRICS</h2>
               <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Measuring Our Success</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {content.successMetrics.map((metric, index) => (
                 <div key={index} className="bg-purple-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-3">{metric.title}</h3>
+                  <h3 className="text-xl font-semibold text-purple-800 mb-3">
+                    {metric.title === "Engagement" && "🚀 Engagement"}
+                    {metric.title === "Savings & Investment" && "💰 Savings & Investment"}
+                    {metric.title === "Retention & Business Growth" && "📈 Retention & Business Growth"}
+                  </h3>
                   <ul className="text-purple-700 space-y-2 text-sm">
                     {metric.metrics.map((item, itemIndex) => (
                       <li key={itemIndex}>• {item}</li>
@@ -626,8 +630,8 @@ const Index = () => {
                 ))}
               </ul>
               <div className="flex flex-col sm:flex-row gap-6 mt-8">
-                <a href={content.linkedinUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition text-lg">Connect on LinkedIn</a>
-                <a href={content.resumeUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-slate-800 text-white font-semibold rounded-lg shadow hover:bg-slate-900 transition text-lg">View My Resume</a>
+                <a href={content.linkedinUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition text-lg">🔗 Connect on LinkedIn</a>
+                <a href={content.resumeUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3 bg-slate-800 text-white font-semibold rounded-lg shadow hover:bg-slate-900 transition text-lg">📄 View My Resume</a>
               </div>
             </div>
           </div>
