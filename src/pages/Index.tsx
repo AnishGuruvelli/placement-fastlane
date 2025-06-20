@@ -112,42 +112,60 @@ const Index = () => {
     setMobileMenuOpen(false);
   };
 
+  const clientPreferences = content.clientPreferences;
   const demandChartData = {
-    labels: ['Want AI-Driven Insights', 'Traditional Approach'],
+    labels: clientPreferences.labels,
     datasets: [{
       label: 'Client Preferences',
-      data: [78, 22],
-      backgroundColor: ['#A78BFA', '#C4B5FD'],
+      data: clientPreferences.values,
+      backgroundColor: clientPreferences.colors,
       borderColor: ['#FFFFFF'],
       borderWidth: 2,
       hoverOffset: 4
     }]
   };
-
   const demandChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
     cutout: '70%',
+    animation: {
+      animateRotate: true,
+      duration: 1200
+    },
     plugins: {
       legend: {
         position: 'bottom' as const,
         labels: {
           color: '#4B5563',
-          font: { size: 14 }
+          font: { size: 15 },
+          usePointStyle: true,
+          padding: 24
         }
       },
       tooltip: {
         callbacks: {
           label: function(context: any) {
-            return `${context.label}: ${context.raw}%`;
+            const total = context.dataset.data.reduce((a: number, b: number) => a + b, 0);
+            const value = context.raw;
+            const percent = ((value / total) * 100).toFixed(0);
+            return `${context.label}: ${percent}%`;
           }
+        }
+      },
+      datalabels: {
+        display: true,
+        color: '#111827',
+        font: { weight: 'bold', size: 18 },
+        formatter: (value: number, ctx: any) => {
+          const total = ctx.chart.data.datasets[0].data.reduce((a: number, b: number) => a + b, 0);
+          return `${Math.round((value / total) * 100)}%`;
         }
       }
     }
   };
 
   const riceChartData = {
-    labels: ['🔍 Smart Portfolio', '📊 Investment Analyzer', '🧠 Market Digest', '⚡ Hyper-Personalised Guidance', '🤖 AI Chatbot'],
+    labels: ['🎯 Gamified Goal-Based Savings', '📈 AI-Driven Diversification', '📚 Bite Sized News', '🤖 AI Nudges & Diagnostics', '⚡ AI Chatbot'],
     datasets: [
       {
         label: 'RICE Score',
@@ -190,6 +208,38 @@ const Index = () => {
           display: false
         }
       }
+    }
+  };
+
+  // Color map for Tailwind classes
+  const colorMap = {
+    green: {
+      border: "border-green-400",
+      text: "text-green-700",
+      bg: "bg-green-50",
+      textBg: "text-green-800",
+      italic: "text-green-600"
+    },
+    blue: {
+      border: "border-blue-400",
+      text: "text-blue-700",
+      bg: "bg-blue-50",
+      textBg: "text-blue-800",
+      italic: "text-blue-600"
+    },
+    pink: {
+      border: "border-pink-400",
+      text: "text-pink-700",
+      bg: "bg-pink-50",
+      textBg: "text-pink-800",
+      italic: "text-pink-600"
+    },
+    yellow: {
+      border: "border-yellow-400",
+      text: "text-yellow-700",
+      bg: "bg-yellow-50",
+      textBg: "text-yellow-800",
+      italic: "text-yellow-600"
     }
   };
 
@@ -309,73 +359,58 @@ const Index = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <section className="text-center pt-8 pb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight">
-            Dezerv AI Compass – Your Intelligent <span className="text-purple-500">Financial Co-Pilot</span>
+            {(() => {
+              const headline = content.hero.headline;
+              const parts = headline.split(/(Compass)/);
+              return parts.map((part, idx) =>
+                part === 'Compass' ? <span key={idx} className="text-purple-500">{part}</span> : part
+              );
+            })()}
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-600">
-            Transforming wealth management with proactive, AI-powered insights that help clients make smarter investment decisions and achieve better financial outcomes.
+            {content.hero.subheadline}
           </p>
         </section>
 
         {/* PM Section */}
         <section className="py-12 bg-gradient-to-r from-purple-100 to-purple-50 rounded-2xl shadow-lg mb-10">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">🎯 Dezerv AI Compass: PM Product Improvement Case Study</h2>
+            <h2 className="text-2xl font-bold text-purple-700 mb-4">{content.pmSection.title}</h2>
             <p className="text-lg md:text-xl text-slate-700 mb-6">
-            As a Product Manager, I identified a key opportunity to strengthen Dezerv's value proposition through the AI Compass—a strategic feature that delivers real-time insights, reduces behavioral biases, and empowers confident investing. This reflects my strength in turning market needs into high-impact product solutions.
+              {content.pmSection.body}
             </p>
-            <a href="#problem" className="inline-block mt-2 px-6 py-2 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition" onClick={handleNavClick}>Explore the Problem I'm Solving →</a>
+            <a href="#problem" className="inline-block mt-2 px-6 py-2 bg-purple-500 text-white font-semibold rounded-lg shadow hover:bg-purple-600 transition" onClick={handleNavClick}>{content.pmSection.cta}</a>
           </div>
         </section>
 
-        {/* Executive Summary */}
-        <section className="py-12 bg-gradient-to-r from-purple-50 to-purple-50 rounded-2xl shadow-lg mb-16">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">🚀 Executive Summary</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-semibold text-red-600 mb-2">Problem</h3>
-                <p className="text-slate-700 text-sm">{content.problemDescription}</p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-semibold text-blue-600 mb-2">Solution</h3>
-                <p className="text-slate-700 text-sm">{content.solutionDescription}</p>
-              </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-semibold text-green-600 mb-2">Outcome</h3>
-                <p className="text-slate-700 text-sm">{content.outcomeDescription}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What is Dezerv */}
+        {/* What is Jar */}
         <section id="overview" ref={el => (routeRefs.current['overview'] = el)} className="py-16 bg-white rounded-2xl shadow-lg scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">1️⃣ Comprehend the Situation</h2>
-              <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">What is Dezerv?</p>
+              <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">{content.about.sectionTitle}</h2>
+              <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">{content.about.title}</p>
             </div>
 
             <div className="mt-12 grid gap-8 md:grid-cols-2">
               <div>
-                <h3 className="text-2xl font-bold text-slate-800 mb-4">About Dezerv</h3>
+                <h3 className="text-2xl font-bold text-slate-800 mb-4">{content.about.aboutTitle}</h3>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  {content.aboutDezerv}
+                  {content.about.aboutBody}
                 </p>
                 <p className="text-slate-600 leading-relaxed">
-                  <strong>The goal?</strong> {content.aboutGoal}
+                  <strong>{content.about.goal.split('?')[0]}?</strong> {content.about.goal.replace('The goal? ', '')}
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-800 mb-4">Industry Shift & Opportunity</h3>
+                <h3 className="text-2xl font-bold text-slate-800 mb-4">{content.about.industryTitle}</h3>
                 <ul className="space-y-3 text-slate-600">
-                  {content.industryBullets.map((bullet, index) => (
+                  {content.about.industryBullets.map((bullet, index) => (
                     <li key={index}>• {bullet}</li>
                   ))}
                 </ul>
                 <div className="mt-6 p-4 bg-purple-50 rounded-lg">
                   <p className="text-sm text-purple-700 font-medium">
-                    {content.missionStatement}
+                    {content.about.mission}
                   </p>
                 </div>
               </div>
@@ -386,7 +421,7 @@ const Index = () => {
         {/* Customer Needs */}
         <section className="py-16 scroll-mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">2️⃣ & 3️⃣ Customer Identification & Needs</h2>
+            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">2️⃣ & 3️⃣ Customer Identification & Goals</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Understanding Our Users</p>
           </div>
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-12">
@@ -411,7 +446,8 @@ const Index = () => {
               </ul>
             </div>
             <div className="p-4 sm:p-6 rounded-lg flex flex-col items-center justify-center">
-              <h3 className="text-center text-lg sm:text-xl font-semibold text-slate-800 mb-4">Client Preferences</h3>
+              <h3 className="text-center text-lg sm:text-xl font-semibold text-slate-800 mb-2">Client Preferences</h3>
+              <p className="text-center text-slate-500 mb-4 text-base">Majority prefer AI-driven insights over traditional approaches</p>
               <div className="w-full max-w-xs sm:max-w-md md:max-w-full chart-container">
                 <Chart type="doughnut" data={demandChartData} options={demandChartOptions} />
               </div>
@@ -427,16 +463,21 @@ const Index = () => {
               <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-8">Top Pain Points</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {content.topPainPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className={`bg-white p-6 rounded-xl shadow-md border-l-4 border-${point.color}-400 flex flex-col justify-between`}
-                >
-                  <h3 className={`text-lg font-bold text-${point.color}-700 mb-2 flex items-center`}><span className="text-2xl mr-2">🔎</span>{point.title}</h3>
-                  <p className="text-slate-700 mb-2"><span className="font-semibold">Problem:</span> {point.problem}</p>
-                  <p className={`italic text-${point.color}-600`}>{point.friction}</p>
-                </div>
-              ))}
+              {content.topPainPoints.map((point, index) => {
+                const colorOrder = ['green', 'blue', 'pink', 'yellow'];
+                const color = colorOrder[index % colorOrder.length];
+                const c = colorMap[color];
+                return (
+                  <div
+                    key={index}
+                    className={`bg-white shadow-lg rounded-2xl p-6 border-l-4 ${c.border}`}
+                  >
+                    <h3 className={`text-lg font-bold ${c.text} mb-2 flex items-center`}><span className="text-2xl mr-2">{point.emoji}</span>{point.title}</h3>
+                    <p className="text-slate-700 mb-2"><span className="font-semibold">Problem:</span> {point.problem}</p>
+                    <p className={`italic ${c.italic}`}>Friction: {point.friction}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -445,21 +486,26 @@ const Index = () => {
         <section id="solution" ref={el => (routeRefs.current['solution'] = el)} className="py-16 scroll-mt-20">
           <div className="text-center mb-12">
             <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">5️⃣ Proposed Solutions</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How Dezerv AI Compass Solves These Pain Points</p>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How Jar AI Compass Solves These Pain Points</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {content.proposedSolutions.map((solution, index) => (
-              <div
-                key={index}
-                className={`bg-white p-6 rounded-xl shadow-md border-l-4 border-${solution.color}-400 flex flex-col justify-between`}
-              >
-                <h3 className={`text-lg font-bold text-${solution.color}-700 mb-2 flex items-center`}><span className="text-2xl mr-2">🔎</span>{solution.title}</h3>
-                <div className={`mb-2`}><span className={`font-semibold text-${solution.color}-700`}>Solution:</span> {solution.solution}</div>
-                <div className="mb-2"><span className="font-semibold">What It Does:</span> {solution.whatItDoes}</div>
-                <div className="mb-2"><span className="font-semibold">Why It Helps:</span> {solution.whyItHelps}</div>
-                <div className={`bg-${solution.color}-50 rounded p-3 mt-2 text-${solution.color}-800 text-sm italic`}>{solution.example}</div>
-              </div>
-            ))}
+            {content.proposedSolutions.map((solution, index) => {
+              const colorOrder = ['green', 'blue', 'pink', 'yellow'];
+              const color = colorOrder[index % colorOrder.length];
+              const c = colorMap[color];
+              return (
+                <div
+                  key={index}
+                  className={`bg-white shadow-lg rounded-2xl p-6 border-l-4 ${c.border}`}
+                >
+                  <h3 className={`text-lg font-bold ${c.text} mb-2 flex items-center`}><span className="text-2xl mr-2">{solution.emoji}</span>{solution.title}</h3>
+                  <div className={`mb-2`}><span className={`font-semibold ${c.text}`}>Solution:</span> {solution.solution}</div>
+                  <div className="mb-2"><span className="font-semibold">What It Does:</span> {solution.whatItDoes}</div>
+                  <div className="mb-2"><span className="font-semibold">Why It Helps:</span> {solution.whyItHelps}</div>
+                  <div className={`${c.bg} rounded p-3 mt-2 ${c.textBg} text-sm italic`}>{solution.example}</div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -489,29 +535,29 @@ const Index = () => {
         {/* Roadmap */}
         <section id="roadmap" ref={el => (routeRefs.current['roadmap'] = el)} className="py-16 scroll-mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">7️⃣ Final Recommendation & Roadmap</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Launch MVP: Dezerv AI Compass</p>
+            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">{content.finalRecommendation.title}</h2>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">{content.finalRecommendation.subtitle}</p>
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="relative pl-12 timeline">
               <div className="mb-10 relative">
-                <div className="phase-card bg-purple-50 p-6 rounded-lg shadow-sm border-l-4 border-purple-400">
-                  <p className="text-sm font-semibold text-purple-600">🔹 Phase 1: Quick Wins (3–6 months)</p>
+                <div className="phase-card bg-green-50 p-6 rounded-lg shadow-sm border-l-4 border-green-400">
+                  <p className="text-sm font-semibold text-green-600">🔹 Phase 1: Quick Wins (3–6 months)</p>
                   <h4 className="font-bold text-lg mt-1 text-slate-800">Foundation & Basic Features</h4>
                   <ul className="mt-2 text-slate-600 space-y-1 text-sm">
-                    {content.phase1Features.map((feature, index) => (
-                      <li key={index}>• {feature}</li>
+                    {content.finalRecommendation.quickWins.map((win, index) => (
+                      <li key={index}>• {win}</li>
                     ))}
                   </ul>
                 </div>
               </div>
               <div className="relative">
-                <div className="phase-card bg-blue-50 p-6 rounded-lg shadow-sm border-l-4 border-blue-400">
-                  <p className="text-sm font-semibold text-blue-600">🔹 Phase 2: Long-term (6–18 months)</p>
+                <div className="phase-card bg-yellow-50 p-6 rounded-lg shadow-sm border-l-4 border-yellow-400">
+                  <p className="text-sm font-semibold text-yellow-600">🔹 Phase 2: Long-term (6–18 months)</p>
                   <h4 className="font-bold text-lg mt-1 text-slate-800">Advanced AI Features</h4>
                   <ul className="mt-2 text-slate-600 space-y-1 text-sm">
-                    {content.phase2Features.map((feature, index) => (
-                      <li key={index}>• {feature}</li>
+                    {content.finalRecommendation.longTermBets.map((bet, index) => (
+                      <li key={index}>• {bet}</li>
                     ))}
                   </ul>
                 </div>
@@ -529,11 +575,11 @@ const Index = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {content.successMetrics.map((metric, index) => (
-                <div key={index} className="bg-blue-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-blue-800 mb-3">{metric.title}</h3>
-                  <ul className="text-blue-700 space-y-2 text-sm">
-                    {metric.metrics.map((item, index) => (
-                      <li key={index}>• {item}</li>
+                <div key={index} className="bg-purple-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold text-purple-800 mb-3">{metric.title}</h3>
+                  <ul className="text-purple-700 space-y-2 text-sm">
+                    {metric.metrics.map((item, itemIndex) => (
+                      <li key={itemIndex}>• {item}</li>
                     ))}
                   </ul>
                 </div>
@@ -543,13 +589,15 @@ const Index = () => {
         </section>
 
         {/* Next Steps */}
-        <section id="next-steps" ref={el => (routeRefs.current['next-steps'] = el)} className="py-16 bg-gradient-to-r from-slate-100 to-gray-100 rounded-2xl">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase mb-2">9️⃣ NEXT STEPS</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-10">If I Were the PM</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <section id="next-steps" ref={el => (routeRefs.current['next-steps'] = el)} className="py-16 scroll-mt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase mb-2">9️⃣ NEXT STEPS</h2>
+              <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-10">If I Were the PM</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-left w-full">
               {content.nextSteps.map((step, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-transform transform hover:-translate-y-2 hover:shadow-2xl border-2 border-purple-100 hover:border-purple-400 cursor-pointer">
+                <div key={index} className="bg-white rounded-xl shadow-lg p-10 flex flex-col items-start border-2 border-purple-100 text-left w-full">
                   <span className="text-4xl mb-4">{step.icon}</span>
                   <h3 className="text-xl font-bold text-purple-700 mb-2">{step.title}</h3>
                   <p className="text-slate-700 text-base">{step.description}</p>
@@ -560,7 +608,7 @@ const Index = () => {
         </section>
 
         {/* About Me */}
-        <section id="about-me" ref={el => (routeRefs.current['about-me'] = el)} className="py-24 bg-white rounded-2xl shadow-lg mt-20">
+        <section id="about-me" ref={el => (routeRefs.current['about-me'] = el)} className="py-24 bg-white rounded-2xl shadow-lg">
           <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16 md:gap-24">
             <div className="flex-shrink-0 flex justify-center w-full md:w-auto mb-10 md:mb-0">
               <img src={profileImg} alt="Anish Guruvelli Professional" className="w-56 h-56 rounded-full object-cover shadow-lg border-8 border-purple-100" />
@@ -585,33 +633,6 @@ const Index = () => {
           </div>
         </section>
       </main>
-      
-      <footer className="bg-slate-800 text-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight">🔚 Final Words</h2>
-          <div className="mt-6 max-w-3xl mx-auto space-y-4">
-            {content.finalWords && (
-              <>
-                <p className="text-lg text-slate-300">
-                  {content.finalWords.slice(0,2).map((item, idx) =>
-                    item.strong ? <strong key={idx}>{item.text}</strong> : item.text
-                  )}
-                </p>
-                <p className="text-lg text-slate-300">
-                  {content.finalWords.slice(2,5).map((item, idx) =>
-                    item.strong ? <strong key={idx}>{item.text}</strong> : item.text
-                  )}
-                </p>
-                <p className="text-lg text-slate-300">
-                  {content.finalWords.slice(5).map((item, idx) =>
-                    item.strong ? <strong key={idx}>{item.text}</strong> : item.text
-                  )}
-                </p>
-              </>
-            )}
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

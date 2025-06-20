@@ -1,23 +1,22 @@
-# Dezerv AI Compass
+# Jar Product Case Study
 
 ## Overview
 
-Dezerv AI Compass is a modern, AI-powered wealth management dashboard designed to empower affluent investors with real-time, actionable insights, mitigate behavioral biases, and foster confident decision-making. This project demonstrates a full product case study, from user research and problem framing to solution design, prioritization, and a polished, responsive UI.
+This repository contains the full product case study for the **Jar Product**. It covers the end-to-end process of identifying a market opportunity, defining user needs, framing the problem, designing solutions, prioritizing features, and presenting a polished, interactive UI. The project demonstrates product thinking, UX, and technical implementation in a modern web stack.
 
 ## Features
 
-- **Strategic Opportunity Section**: Product vision and market need articulation.
-- **Executive Summary**: Problem, solution, and outcome at a glance.
-- **Customer Identification & Needs**: User segments, goals, and business focus, fully mobile responsive.
-- **Pain Points (Problem Framing)**: 2x2 grid of top user pain points, each with emoji, color, and friction statements.
-- **Proposed Solutions**: 2x2 grid of AI-driven solutions, each mapped to a pain point, with clear value, what it does, and real-world examples.
-- **RICE Prioritization**: Interactive bar chart with color-coded features, value/effort notes, and feature mapping.
-- **Roadmap**: Visual timeline of MVP and advanced feature phases.
-- **Success Metrics**: Engagement, retention, and revenue metrics, in a clean, responsive layout.
-- **Next Steps**: Actionable, interactive cards for future product/tech/UX work.
-- **About Me**: Professional profile, skills, and links, with photo and modern layout.
-- **Animated Navbar**: Smooth underline animation, mobile responsive, with all key sections.
-- **Fully Responsive Design**: All sections and charts adapt to mobile and desktop.
+- **Opportunity & Market Context**: Clear articulation of the product vision and the market gap Jar addresses.
+- **Executive Summary**: Concise overview of the problem, solution, and expected outcomes.
+- **User Segments & Needs**: Identification of key user personas, their goals, and pain points.
+- **Problem Framing**: Visual breakdown of top user pain points and friction points.
+- **Solution Design**: Proposed features and solutions mapped to user needs, with real-world examples.
+- **Prioritization (RICE Framework)**: Feature prioritization using the RICE method, visualized with interactive charts.
+- **Roadmap**: Timeline of MVP and future feature phases.
+- **Success Metrics**: KPIs and metrics to measure product success.
+- **Next Steps**: Actionable recommendations for future product, tech, and UX work.
+- **About the Author**: Professional profile, skills, and contact links.
+- **Modern, Responsive UI**: Fully responsive design, animated navigation, and interactive data visualizations.
 
 ## Tech Stack
 
@@ -31,8 +30,8 @@ Dezerv AI Compass is a modern, AI-powered wealth management dashboard designed t
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/AnishGuruvelli/dezerv-ai-navigator.git
-   cd dezerv-ai-navigator
+   git clone https://github.com/AnishGuruvelli/jar-product-case-study.git
+   cd jar-product-case-study
    ```
 2. **Install dependencies:**
    ```sh
@@ -58,7 +57,7 @@ Then serve the `dist/` directory.
 - `src/pages/Index.tsx` — Main product case study and UI
 - `src/components/ui/` — Reusable UI components
 - `src/hooks/` — Custom React hooks
-- `public/` — Static assets (including your professional photo)
+- `public/` — Static assets (including images)
 
 ## Credits
 
