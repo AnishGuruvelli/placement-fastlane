@@ -1,0 +1,215 @@
+{
+  "siteTitle": "Jar Product Case Study",
+  "nav": {
+    "overview": "Overview",
+    "problem": "The Problem",
+    "solution": "Solution",
+    "prioritization": "Prioritization",
+    "roadmap": "Roadmap",
+    "successMetrics": "Success Metrics",
+    "nextSteps": "Next Steps",
+    "aboutMe": "About Me"
+  },
+  "hero": {
+    "headline": "Jar Product Case Study – Your Intelligent Financial Co-Pilot",
+    "subheadline": "Transforming wealth management with proactive, AI-powered insights that help clients make smarter investment decisions and achieve better financial outcomes."
+  },
+  "pmSection": {
+    "title": "🎯 Jar AI Compass: PM Product Improvement Case Study",
+    "body": "As a Product Manager, I identified a key opportunity to strengthen Jar's value proposition through the AI Compass—a strategic feature that delivers real-time insights, reduces behavioral biases, and empowers confident investing. This reflects my strength in turning market needs into high-impact product solutions.",
+    "cta": "Explore the Problem I'm Solving →"
+  },
+  "executiveSummary": {
+    "title": "🚀 Executive Summary",
+    "problem": "Jar's affluent clients face information overload, behavioral biases, and delayed, generic advice despite its strong data-driven foundation.",
+    "solution": "Launch Jar AI Compass—an AI-powered feature offering contextual insights, behavioral nudges, and hyper-personalized financial guidance in real-time.",
+    "outcome": "Increased engagement, higher client retention, improved AUM growth, and enhanced brand differentiation in India's competitive wealth-tech space."
+  },
+  "about": {
+    "sectionTitle": "1️⃣ Comprehend the Situation",
+    "title": "What is Jar?",
+    "aboutTitle": "About Jar",
+    "aboutBody": "Jar is a modern wealth management platform in India that helps people invest in PMS (portfolio management services), mutual funds, bonds, and private assets. It's built with smart technology and has a clean, user-friendly design.",
+    "goal": "The goal? Help clients grow their wealth through data-driven advice and better returns.",
+    "industryTitle": "Industry Shift & Opportunity",
+    "industryBullets": [
+      "Rise of AI robo-advisors (e.g., INDmoney, Zerodha's Nudge layer)",
+      "Clients now expect personalized, real-time guidance, not quarterly PDFs",
+      "Opportunity: Create a proactive, AI-driven co-pilot that strengthens personalization"
+    ],
+    "mission": "Mission: Be the go-to investment partner for affluent Indians using technology and data—not sales tactics."
+  },
+  "problemDescription": "Jar's affluent clients face information overload, behavioral biases, and delayed, generic advice despite its strong data-driven foundation.",
+  "solutionDescription": "Launch Jar AI Compass—an AI-powered feature offering contextual insights, behavioral nudges, and hyper-personalized financial guidance in real-time.",
+  "outcomeDescription": "Increased engagement, higher client retention, improved AUM growth, and enhanced brand differentiation in India's competitive wealth-tech space.",
+  "aboutDezerv": "Jar is a modern wealth management platform in India that helps people invest in PMS (portfolio management services), mutual funds, bonds, and private assets. It's built with smart technology and has a clean, user-friendly design.",
+  "aboutGoal": "Help clients grow their wealth through data-driven advice and better returns.",
+  "industryBullets": [
+    "Rise of AI robo-advisors (e.g., INDmoney, Zerodha's Nudge layer)",
+    "Clients now expect personalized, real-time guidance, not quarterly PDFs",
+    "Opportunity: Create a proactive, AI-driven co-pilot that strengthens personalization"
+  ],
+  "missionStatement": "Mission: Be the go-to investment partner for affluent Indians using technology and data—not sales tactics.",
+  "userSegments": [
+    "Affluent, digitally-savvy investors (core Jar customers)",
+    "First-time, high-income professionals needing education + guidance",
+    "Existing clients expecting more from their advisors due to rising market volatility"
+  ],
+  "userGoals": [
+    "Achieve financial milestones confidently",
+    "Stay updated about the market via simple digestible content"
+  ],
+  "businessFocus": [
+    "Boost user engagement through meaningful interactions",
+    "Enhance retention with hyper-personalized experiences",
+    "Scale personalization using smart technology",
+    "Grow AUM and revenue through smarter product matching",
+    "Lead the market in AI-powered wealth management"
+  ],
+  "topPainPoints": [
+    {
+      "title": "1. Lack of Granular, Actionable Explanations for Portfolio Issues",
+      "problem": "Users often receive broad recommendations (e.g., 'reduce mid-cap exposure') without understanding the deeper reasons behind them. They want to know why their current allocation isn't optimal and how Jar's suggestion better aligns with their goals.",
+      "friction": "You tell me my mid-cap allocation is too high, but I need to know why, based on my goals and market conditions. What's wrong with my current holdings?",
+      "color": "green"
+    },
+    {
+      "title": "2. Insufficient Detail in Mutual Fund/Stock Analysis & Comparison",
+      "problem": "Investors seek deeper, more transparent analysis beyond returns—covering fund manager performance, expense ratios, volatility, AUM trends, sector biases, and recovery history.",
+      "friction": "I want to compare Fund A and Fund B with real data—fund manager track record, sector allocation, risk metrics—not just get a switch recommendation.",
+      "color": "blue"
+    },
+    {
+      "title": "3. Information Overload & Lack of Contextual Market Insights",
+      "problem": "Clients are overwhelmed with broad market news that lacks relevance to their actual investments. They prefer quick, personalized updates about their own portfolio, along with simple summaries of overall market mood (e.g., fear/greed index).",
+      "friction": "News is everywhere, but I want to know what affects my funds and stocks. Show me just what matters to me.",
+      "color": "pink"
+    },
+    {
+      "title": "4. Delayed & Generic Advice in a Dynamic World",
+      "problem": "Life events and market shifts happen fast, but current advisory models rely on periodic reviews or rigid rules. Clients want real-time advice that understands their evolving goals and context.",
+      "friction": "My income changed last month, but I haven't received any portfolio update. I need timely, personalized advice—not generic alerts every few months.",
+      "color": "yellow"
+    }
+  ],
+  "proposedSolutions": [
+    {
+      "title": "🔍 Smart Portfolio Explainer",
+      "solution": "AI-Driven Portfolio Diagnostics & Comparative Analysis",
+      "whatItDoes": "The Compass analyzes your current portfolio and explains—in plain language—why certain allocations may be suboptimal. It then compares your holdings with Jar's recommended options, showing advantages like lower expense ratios, better manager track records, or stronger long-term performance.",
+      "whyItHelps": "Builds trust through transparency. Clients gain a clear, data-backed understanding of why a switch is suggested—not just what to do.",
+      "example": "Your mid-cap fund has a 0.5% higher expense ratio than peers. Our recommendation, Fund X, costs less and has outperformed in 4 of the last 5 years under a consistent manager.",
+      "color": "green"
+    },
+    {
+      "title": "📊 Deep Investment Analyzer",
+      "solution": "Comprehensive AI-Powered Investment Analysis",
+      "whatItDoes": "For every mutual fund or stock, the AI delivers a deep dive that includes: fund manager history and stability, expense ratio benchmarking, long-term performance trends (5–10 years), AUM trends and fund stability, drawdown/recovery analysis, sector exposures and thematic relevance (e.g., EV, AI, defense), volatility and risk metrics (e.g., Beta, Standard Deviation).",
+      "whyItHelps": "Gives investors full visibility and objective comparisons, enabling them to validate Jar's recommendations with confidence.",
+      "example": "Fund A has low volatility and steady AUM growth, while Fund B shows signs of sector overexposure and frequent fund manager changes.",
+      "color": "blue"
+    },
+    {
+      "title": "🧠 Personalized Market Digest",
+      "solution": "Bite-Sized, Personalized News & Weekly Market Compass",
+      "whatItDoes": "Curates relevant market news and updates tailored to the user's holdings. Delivers short, digestible insights directly related to their mutual funds, stocks, or portfolio themes. Includes a weekly market summary with simple indicators like the 'Greed Index' and personalized interpretations.",
+      "whyItHelps": "Cuts through the noise and helps users connect global market trends to their personal investments.",
+      "example": "Company A, your top holding, announced a product launch that could boost earnings. Meanwhile, the market's greed index is high—historically a sign to tread cautiously.",
+      "color": "pink"
+    },
+    {
+      "title": "⚡ Hyper-Personalised Financial Guidance",
+      "solution": "Hyper-Personalized, Proactive Insights & Liquidity Solutions",
+      "whatItDoes": "Uses real-time behavioral, financial, and market data to deliver timely suggestions, such as: rebalancing alerts based on recent income changes or market events, recommendations on what to sell to meet liquidity needs, with tax-efficient strategies, timely product suggestions tied to user goals.",
+      "whyItHelps": "Keeps advice dynamic, personalized, and relevant—without waiting for quarterly reviews or manual advisor input.",
+      "example": "You've had a recent cash requirement. We suggest selling underperforming Fund B with minimal tax impact to meet your goal, while preserving long-term growth strategy.",
+      "color": "yellow"
+    }
+  ],
+  "featurePrioritization": [
+    { "title": "🔍 Smart Portfolio Explainer", "description": "High reach, high impact - Must-have, flagship feature" },
+    { "title": "📊 Deep Investment Analyzer", "description": "Key value-driver, pairs with Explainer" },
+    { "title": "🧠 Personalized Market Digest", "description": "Quickest to ship" },
+    { "title": "⚡ Hyper-Personalised Financial Guidance", "description": "Strategic bet, longer-term payoff" },
+    { "title": "🤖 AI Chatbot", "description": "Lower priority due to high effort" }
+  ],
+  "phase1Features": [
+    "Rule-based contextual alerts (e.g., fund manager change, high AUM churn)",
+    "Weekly summaries with market insights + portfolio health",
+    "Basic nudges (e.g., 'Consider rebalancing now due to X.')"
+  ],
+  "phase2Features": [
+    "LLM-powered assistant for conversational insights",
+    "Predictive analytics for financial planning needs",
+    "Real-time product matching & nudged product flows"
+  ],
+  "successMetrics": [
+    {
+      "title": "Engagement",
+      "metrics": [
+        "DAU/WAU of AI Compass",
+        "Time Spent",
+        "CTR on AI alerts"
+      ]
+    },
+    {
+      "title": "Retention",
+      "metrics": [
+        "Churn rate delta (users with vs. without Compass)",
+        "Net Promoter Score (NPS)"
+      ]
+    },
+    {
+      "title": "Revenue & Efficiency",
+      "metrics": [
+        "AUM uplift (AI-influenced)",
+        "Product adoption (via AI nudges)",
+        "Fewer manual advisor touchpoints"
+      ]
+    }
+  ],
+  "nextSteps": [
+    {
+      "icon": "🔍",
+      "title": "Deep Dive into User Research",
+      "description": "Conduct interviews and usability testing with Jar clients to validate pain points and gather feedback on desired AI-driven features, especially around analysis depth and personalization."
+    },
+    {
+      "icon": "🗄️",
+      "title": "Data Infrastructure Assessment",
+      "description": "Collaborate with data engineering and science teams to assess readiness for advanced AI model deployment and real-time data processing for granular investment analysis."
+    },
+    {
+      "icon": "🧩",
+      "title": "Prototype Development",
+      "description": "Build low-fidelity prototypes or mockups of the AI Compass interface to visualize the user experience and gather early feedback from stakeholders and pilot users."
+    },
+    {
+      "icon": "🛠️",
+      "title": "Define Technical Architecture",
+      "description": "Work with engineering leads to outline the technical architecture for the AI Compass, including model deployment, API integrations, and scalability."
+    }
+  ],
+  "aboutMeDescription": "This project, Jar AI Compass, is a testament to my capabilities as a Product Manager. My passion lies in building innovative solutions that solve real-world problems and drive significant business value. I thrive at the intersection of business strategy, technology, and user experience.",
+  "keySkills": [
+    { "title": "💡 Strategic Product Vision", "description": "Ability to identify market opportunities and define compelling product strategies." },
+    { "title": "🤝 User-Centric Design", "description": "Deep empathy for user needs and a commitment to delivering intuitive experiences." },
+    { "title": "📊 Data-Driven Decision Making", "description": "Proficient in leveraging data and frameworks (like RICE) for informed prioritization." },
+    { "title": "🛠️ Cross-Functional Collaboration", "description": "Experience in defining requirements and working with engineering, design, and business teams." },
+    { "title": "🔄 Agile Development", "description": "Practical understanding of iterative development and continuous improvement methodologies." }
+  ],
+  "linkedinUrl": "https://www.linkedin.com/in/anishguruvelli/",
+  "resumeUrl": "https://drive.google.com/file/d/1d-7u4L4ZZhomF-tpMLOqF6L2My6meYZ8/view?usp=sharing",
+  "finalWordsWhyMatters": "Jar's clients don't want 'more data.' They want 'better direction.'",
+  "finalWordsEdge": "lead the future of wealth management in India",
+  "finalWords": [
+    { "text": "Why this matters:", "strong": true },
+    { "text": "Jar's clients don't want 'more data.' They want 'better direction.'" },
+    { "text": "The AI Compass doesn't replace your advisor—it ", "strong": false },
+    { "text": "supercharges", "strong": true },
+    { "text": " them." },
+    { "text": "It gives Jar the edge to ", "strong": false },
+    { "text": "lead the future of wealth management in India", "strong": true },
+    { "text": "." }
+  ]
+} 
