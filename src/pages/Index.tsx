@@ -576,11 +576,7 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {content.successMetrics.map((metric, index) => (
                 <div key={index} className="bg-purple-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-3">
-                    {metric.title === "Engagement" && "🚀 Engagement"}
-                    {metric.title === "Savings & Investment" && "💰 Savings & Investment"}
-                    {metric.title === "Retention & Business Growth" && "📈 Retention & Business Growth"}
-                  </h3>
+                  <h3 className="text-xl font-semibold text-purple-800 mb-3">{metric.title}</h3>
                   <ul className="text-purple-700 space-y-2 text-sm">
                     {metric.metrics.map((item, itemIndex) => (
                       <li key={itemIndex}>• {item}</li>

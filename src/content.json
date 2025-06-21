@@ -12,7 +12,7 @@
   },
   "hero": {
     "headline": "Jar Compass \u2013 Your Intelligent Co-Pilot",
-    "subheadline": "From Micro-Savings App to Intelligent Financial Partner -> Leveraging AI to deepen user engagement, drive smarter savings habits, and unlock personalized micro-investment opportunities beyond gold."
+    "subheadline": "From Micro-Savings App to Intelligent Financial Partner -> Leveraging AI to deepen user engagement, drive smarter savings habits."
   },
   "pmSection": {
     "title": "\ud83c\udfaf Jar Compass: PM Product Improvement Case Study",
@@ -140,7 +140,7 @@
   ],
   "successMetrics": [
     {
-      "title": "Engagement",
+      "title": "🚀 Engagement & Adoption",
       "metrics": [
         "DAU/WAU of Jar Compass Features (goal jars, nudges, gamification, recommendations)",
         "Average Session Duration (JAR App)",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "title": "Savings & Investment",
+      "title": "💰 Savings & Investment",
       "metrics": [
         "Average Savings Value (ASV) per User",
         "Assets Under Management (AUM) Growth",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "title": "Retention & Business Growth",
+      "title": "📈 Retention & Business Growth",
       "metrics": [
         "User Retention Rate (Cohort Analysis)",
         "Churn Rate Reduction",
@@ -228,22 +228,21 @@
       }
     ],
    "quickWins": [
-    "Enable users to create and track up to 3 concurrent financial goals with visual progress.",
-    "Introduce saving streaks with basic rewards like badges or coins.",
+    "Enable users to create and track multiple concurrent financial goals with visual progress.",
+    "Introduce saving streaks with basic rewards like badges or coins redeemable for gold or perks.",
     "Show gold savings growth with monthly performance summaries compared to inflation.",
     "Offer age-based goal suggestions (e.g., retirement, career development).",
-    "Share short, curated market updates covering broad trends."
+    "Share short, curated market updates covering broad trends.",
+    "Send bite-sized news updates related to specific user holdings.",
+    "Personalised Notifications for better user engagement and stickiness."
   ],
   "longTermBets": [
     "Use AI to guide multi-goal savings with predictive timelines and spending-based nudges.",
     "Recommend personalized micro-investments (e.g., SIPs, FDs) based on user goals and risk profile.",
-    "Launch advanced gamified coin system redeemable for gold or perks.",
-    "Detect financial events (e.g., appraisal bonus) and suggest smart savings actions.",
+    "Analyse user transaction history and detect financial events (e.g., appraisal bonus) and suggest smart savings actions.",
     "Build interactive financial literacy modules with quizzes and a weekly market compass.",
     "Analyze user portfolios to flag issues and explain better options using clear comparisons.",
-    "Send bite-sized news updates related to specific user holdings.",
-    "Add a conversational AI chatbot to answer finance questions in simple, local language.",
-    "Integrate external bank/app data (with consent) for smarter, holistic insights."
+    "Add a conversational AI chatbot to answer finance questions in simple, local language."
   ]
   },
   "clientPreferences": {
