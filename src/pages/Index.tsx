@@ -540,7 +540,7 @@ const Index = () => {
               <div className="mb-10 relative">
                 <div className="phase-card bg-green-50 p-6 rounded-lg shadow-sm border-l-4 border-green-400">
                   <p className="text-sm font-semibold text-green-600">🔹 Phase 1: Quick Wins (3–6 months)</p>
-                  <h4 className="font-bold text-lg mt-1 text-slate-800">Foundation & Basic Features</h4>
+                  <h4 className="font-bold text-lg mt-1 text-slate-800">Core Foundation & Engagement Loops</h4>
                   <ul className="mt-2 text-slate-600 space-y-1 text-sm">
                     {content.finalRecommendation.quickWins.map((win, index) => (
                       <li key={index}>• {win}</li>
@@ -551,7 +551,7 @@ const Index = () => {
               <div className="relative">
                 <div className="phase-card bg-yellow-50 p-6 rounded-lg shadow-sm border-l-4 border-yellow-400">
                   <p className="text-sm font-semibold text-yellow-600">🔹 Phase 2: Long-term (6–18 months)</p>
-                  <h4 className="font-bold text-lg mt-1 text-slate-800">Advanced AI Features</h4>
+                  <h4 className="font-bold text-lg mt-1 text-slate-800">AI-Driven Personalization & Placement Acceleration</h4>
                   <ul className="mt-2 text-slate-600 space-y-1 text-sm">
                     {content.finalRecommendation.longTermBets.map((bet, index) => (
                       <li key={index}>• {bet}</li>

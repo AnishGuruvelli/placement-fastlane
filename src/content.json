@@ -181,13 +181,12 @@
       ]
     },
     {
-      "title": "💼 Placement Outcomes & Retention",
+      "title": "💼 Placement Outcomes",
       "metrics": [
         "Average Time to Placement (From Sign-Up to Offer)",
         "Interview to Offer Conversion Rate",
         "% of Job Applications via AI Auto-Apply with Shortlist",
-        "NPS/CSAT from Students Post-Placement",
-        "Returning Users After Placement (Upskilling, Mentoring)"
+        "NPS/CSAT from Students Post-Placement"
       ]
     }
   ],
@@ -264,21 +263,18 @@
       }
     ],
     "quickWins": [
-      "Enable users to create and track multiple concurrent financial goals with visual progress.",
-      "Introduce saving streaks with basic rewards like badges or coins redeemable for gold or perks.",
-      "Show gold savings growth with monthly performance summaries compared to inflation.",
-      "Offer age-based goal suggestions (e.g., retirement, career development).",
-      "Share short, curated market updates covering broad trends.",
-      "Send bite-sized news updates related to specific user holdings.",
-      "Personalised Notifications for better user engagement and stickiness."
+      "Launch the Readiness Score dashboard combining mocks, resume, GitHub activity, and coins.",
+      "Introduce coin-based rewards for consistent actions (mocks, peer reviews, module completion).",
+      "Enable daily prep tracker with 1 DSA + 1 HR + 1 System Design question, plus streak badges.",
+      "Auto-group students into skill-matched pods with weekly challenges and ratings.",
+      "Send personalized nudges and reminders based on readiness gaps and user behavior.",
+      "Highlight top performers and publicly reward consistency to boost credibility and motivation."
     ],
     "longTermBets": [
-      "Use AI to guide multi-goal savings with predictive timelines and spending-based nudges.",
-      "Recommend personalized micro-investments (e.g., SIPs, FDs) based on user goals and risk profile.",
-      "Analyse user transaction history and detect financial events (e.g., appraisal bonus) and suggest smart savings actions.",
-      "Build interactive financial literacy modules with quizzes and a weekly market Placement Fastlane.",
-      "Analyze user portfolios to flag issues and explain better options using clear comparisons.",
-      "Add a conversational AI chatbot to answer finance questions in simple, local language."
+      "Enable Smart Job AutoApply based on Readiness Score, preferences, and fit.",
+      "Generate personalized resume insights and feedback using NLP models.",
+      "Launch AI-powered mock interview feedback with actionable tips and scores.",
+      "Build recruiter-facing dashboards that surface top 'Interview Ready' talent based on live data."
     ]
   }
 }
