@@ -1,5 +1,5 @@
 {
-  "name": "jar-product-case-study",
+  "name": "newton-school-placement-fast-lane",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -84,5 +84,5 @@
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   },
-  "homepage": "https://anishguruvelli.github.io/jar-product-case-study"
+  "homepage": "https://anishguruvelli.github.io/newton-school-placement-fast-lane"
 }

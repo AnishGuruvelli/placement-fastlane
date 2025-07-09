@@ -165,7 +165,7 @@ const Index = () => {
   };
 
   const riceChartData = {
-    labels: ['🎯 Gamified Goal-Based Savings', '📈 AI-Driven Diversification', '📚 Bite Sized News', '🤖 AI Nudges & Diagnostics', '⚡ AI Chatbot'],
+    labels: ['🪙 Grind to Shine', '🔥 Daily Spark', '🧭 Readiness Score + AutoApply', '👥 Squad Goals', '🧠 AI-Powered Mock Interview'],
     datasets: [
       {
         label: 'RICE Score',
@@ -361,10 +361,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight">
             {(() => {
               const headline = content.hero.headline;
-              const parts = headline.split(/(Compass)/);
-              return parts.map((part, idx) =>
-                part === 'Compass' ? <span key={idx} className="text-purple-500">{part}</span> : part
-              );
+              return <span>{headline}</span>;
             })()}
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-600">
@@ -424,8 +421,8 @@ const Index = () => {
             <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">2️⃣ & 3️⃣ Customer Identification & Goals</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Understanding Our Users</p>
           </div>
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md mb-6 md:mb-0 w-full md:w-3/5">
               <h3 className="text-lg sm:text-xl font-bold text-purple-700 mb-2 sm:mb-4">User Segments</h3>
               <ul className="ml-4 list-disc text-slate-700 mb-6">
                 {content.userSegments.map((segment, index) => (
@@ -445,9 +442,9 @@ const Index = () => {
                 ))}
               </ul>
             </div>
-            <div className="p-4 sm:p-6 rounded-lg flex flex-col items-center justify-center">
+            <div className="p-4 sm:p-6 rounded-lg flex flex-col items-center justify-center w-full md:w-2/5">
               <h3 className="text-center text-lg sm:text-xl font-semibold text-slate-800 mb-2">Client Preferences</h3>
-              <p className="text-center text-slate-500 mb-4 text-base">Majority prefer AI-driven insights over traditional approaches</p>
+              <p className="text-center text-slate-500 mb-4 text-base">{content.clientPreferences.description}</p>
               <div className="w-full max-w-xs sm:max-w-md md:max-w-full chart-container">
                 <Chart type="doughnut" data={demandChartData} options={demandChartOptions} />
               </div>
@@ -486,7 +483,7 @@ const Index = () => {
         <section id="solution" ref={el => (routeRefs.current['solution'] = el)} className="py-16 scroll-mt-20">
           <div className="text-center mb-12">
             <h2 className="text-base font-semibold text-purple-600 tracking-wide uppercase">5️⃣ Proposed Solutions</h2>
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How Jar Compass Solves These Pain Points</p>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">How {content.hero.headline} Solves These Pain Points</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {content.proposedSolutions.map((solution, index) => {

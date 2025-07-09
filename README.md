@@ -1,70 +1,72 @@
-# Jar Product Case Study
+# Newton School – Placement Fast Lane
 
 ## Overview
-
-This repository contains the full product case study for the **Jar Product**. It covers the end-to-end process of identifying a market opportunity, defining user needs, framing the problem, designing solutions, prioritizing features, and presenting a polished, interactive UI. The project demonstrates product thinking, UX, and technical implementation in a modern web stack.
+Newton School – Placement Fast Lane is a product case study and demo platform designed to showcase innovative features that accelerate student placements. The project demonstrates how gamification, readiness scoring, peer pods, and data-driven motivation can transform online learning into a true placement engine.
 
 ## Features
-
-- **Opportunity & Market Context**: Clear articulation of the product vision and the market gap Jar addresses.
-- **Executive Summary**: Concise overview of the problem, solution, and expected outcomes.
-- **User Segments & Needs**: Identification of key user personas, their goals, and pain points.
-- **Problem Framing**: Visual breakdown of top user pain points and friction points.
-- **Solution Design**: Proposed features and solutions mapped to user needs, with real-world examples.
-- **Prioritization (RICE Framework)**: Feature prioritization using the RICE method, visualized with interactive charts.
-- **Roadmap**: Timeline of MVP and future feature phases.
-- **Success Metrics**: KPIs and metrics to measure product success.
-- **Next Steps**: Actionable recommendations for future product, tech, and UX work.
-- **About the Author**: Professional profile, skills, and contact links.
-- **Modern, Responsive UI**: Fully responsive design, animated navigation, and interactive data visualizations.
+- **Readiness Score Dashboard:** Unified metric combining resume, GitHub, mocks, and coins to signal job readiness.
+- **Coin Motivation System:** Earn coins for consistent prep, peer reviews, and project submissions.
+- **Skill-Matched Peer Pods:** Auto-generated groups for collaborative learning and accountability.
+- **Daily Prep Tracker:** Structured daily questions and streaks to build consistent habits.
+- **Client Preferences Visualization:** Data-driven insights into recruiter priorities.
+- **Professional, Responsive UI:** Built with React, Tailwind CSS, and Chart.js.
 
 ## Tech Stack
-
-- **React** (TypeScript)
-- **Vite** (build tool)
-- **Tailwind CSS** (utility-first styling)
-- **shadcn/ui** (UI components)
-- **Chart.js** + react-chartjs-2 (data visualization)
+- **Frontend:** React (TypeScript), Vite
+- **Styling:** Tailwind CSS
+- **Charts:** Chart.js, react-chartjs-2
+- **Component Library:** Custom UI components (Radix UI, shadcn)
 
 ## Getting Started
-
 1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/AnishGuruvelli/jar-product-case-study.git
-   cd jar-product-case-study
+   ```bash
+   git clone https://github.com/anishguruvelli/newton-school-placement-fastlane.git
+   cd newton-school-placement-fastlane
    ```
 2. **Install dependencies:**
-   ```sh
+   ```bash
    npm install
+   # or
+   bun install
    ```
 3. **Run the development server:**
-   ```sh
+   ```bash
    npm run dev
+   # or
+   bun run dev
    ```
-4. **Open your browser:**
+4. **Open in your browser:**
    Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
 
-## Deployment
-
-You can deploy this project to any static hosting provider (Vercel, Netlify, GitHub Pages, etc.) or your own infrastructure. Build with:
-```sh
-npm run build
+## Folder Structure
 ```
-Then serve the `dist/` directory.
+newton-school-placement-fastlane/
+├── public/                # Static assets (images, favicon, etc.)
+├── src/
+│   ├── components/        # UI components (accordion, button, etc.)
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── pages/             # Main pages (Index, NotFound)
+│   ├── App.tsx            # App root
+│   ├── content.json       # All product/case study content (editable)
+│   └── main.tsx           # Entry point
+├── index.html             # Main HTML template
+├── tailwind.config.ts     # Tailwind CSS config
+├── package.json           # Project metadata and scripts
+└── README.md              # This file
+```
 
-## Project Structure
+## Customization
+- **Content:** All product copy, case study details, and chart data are in `src/content.json` for easy editing.
+- **UI:** Components are modular and can be extended or replaced as needed.
+- **Branding:** Update `index.html` and `public/` assets for your own branding.
 
-- `src/pages/Index.tsx` — Main product case study and UI
-- `src/components/ui/` — Reusable UI components
-- `src/hooks/` — Custom React hooks
-- `public/` — Static assets (including images)
-
-## Credits
-
-- Product, UX, and case study: [Anish Guruvelli](https://www.linkedin.com/in/anishguruvelli/)
-- UI: shadcn/ui, Tailwind CSS
-- Charts: Chart.js, react-chartjs-2
+## Deployment
+- Static build via Vite: `npm run build` (output in `dist/`)
+- Deploy to GitHub Pages or any static hosting provider.
 
 ## License
+This project is for educational and demonstration purposes.
 
-MIT License. See [LICENSE](LICENSE) for details.
+---
+For questions or collaboration, connect on [LinkedIn](https://www.linkedin.com/in/anishguruvelli/). 

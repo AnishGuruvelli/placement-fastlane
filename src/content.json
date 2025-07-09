@@ -1,5 +1,5 @@
 {
-  "siteTitle": "Jar Product Case Study",
+  "siteTitle": "Newton School Product Case Study",
   "nav": {
     "overview": "Overview",
     "problem": "The Problem",
@@ -11,200 +11,236 @@
     "aboutMe": "About Me"
   },
   "hero": {
-    "headline": "Jar Compass \u2013 Your Intelligent Co-Pilot",
-    "subheadline": "From Micro-Savings App to Intelligent Financial Partner -> Leveraging AI to deepen user engagement, drive smarter savings habits."
+    "headline": "Newton School – Placement Fast Lane",
+    "subheadline": "From Online Learning Platform to Placement Accelerator → Using Coins, Readiness Scores, and Peer Pods to Boost Outcomes at Scale"
   },
   "pmSection": {
-    "title": "\ud83c\udfaf Jar Compass: PM Product Improvement Case Study",
-    "body": "As a Product Manager, I identified a strategic opportunity to evolve JAR from a passive savings app into an intelligent financial companion. By designing the Jar Compass—with features like Multi-Goal Jars, Personalized Nudges, Bite Sized News and Micro-Investment Recommendations—I translated user pain points into scalable solutions that drive habit formation, increase engagement, and unlock long-term value. This reflects my ability to connect deep user insights with business goals and ship high-impact, AI-led products",
-    "cta": "Explore the Problem I'm Solving \u2192"
+    "title": "🎯 Placement Fast Lane: PM Product Improvement Case Study",
+    "body": "With the limited knowledge I have about the company, I identified a strategic opportunity to transform Newton School into a true placement enabler. As a Product Manager, I conceptualized the Placement Fast Lane, designing features like the Coin Motivation System, Readiness Score Dashboard, Skill-Matched Peer Pods, and Daily Prep Trackers—each solving specific learner pain points while driving business goals.",
+    "cta": "Explore the Problem I'm Solving →"
   },
   "about": {
-    "sectionTitle": "1\ufe0f\u20e3 Comprehend the Situation",
-    "title": "What is Jar?",
-    "aboutTitle": "About Jar",
-    "aboutBody": "Jar is a leading Indian fintech app that is revolutionizing savings by making investments in 24K digital gold effortlessly accessible. Its innovative system automatically rounds up daily digital transaction spare change, investing it into gold from just ₹10. This approach not only simplifies gold investing but primarily aims to instill and automate a consistent saving habit for millions of users across India, fostering greater financial inclusion.",
-    "goal": "The goal? Evolve from a savings platform into a holistic, intelligent financial companion.",
+    "sectionTitle": "1️⃣ Comprehend the Situation",
+    "title": "What is Newton School?",
+    "aboutTitle": "About Newton School",
+    "aboutBody": "Newton School is a fast-growing Indian edtech platform focused on helping students and working professionals land high-quality tech jobs. Through structured programs, mentorship, and live classes, Newton School enables learners to upskill and become industry-ready—regardless of background. Its core promise lies in transforming effort into outcomes through guided learning, mock interviews, and real-world projects.",
+    "goal": "The goal? Evolve Newton School from a structured course provider into a dynamic placement engine that personalizes learning and automates job readiness at scale.",
     "industryTitle": "Industry Shift & Opportunity",
     "industryBullets": [
-      "Surge in Indian household savings shows appetite for accessible products",
-      "Users are seeking diversified saving options beyond just digital gold",
-      "Opportunity: Use AI to drive engagement, higher-value saving, and product expansion"
+      "Spike in demand for outcome-focused education over traditional degrees",
+      "Users seek faster, more personalized paths to job readiness",
+      "Opportunity: Use gamification and AI to drive consistency, motivation, and placement outcomes"
     ],
-    "mission": "Mission: Make saving simple, consistent, and smart for every Indian using micro-investing and intelligent guidance."
+    "mission": "Mission: Make job prep simple, rewarding, and consistent—by combining peer learning, AI nudges, and data-driven readiness signals."
   },
   "userSegments": [
-    "First-time savers/investors looking for easy starting points",
-    "Gig economy workers and daily earners with irregular incomes",
-    "Gen Z and millennials who prefer mobile-native financial tools",
-    "Existing Jar users ready to grow and diversify their savings"
+    "College students in 3rd and 4th year aiming for placements",
+    "Working professionals looking to switch careers into tech",
+    "Learners struggling with self-paced online programs",
+    "Upskillers who need motivation, structure, and mock interview exposure"
   ],
   "userGoals": [
-    "Build a savings habit effortlessly",
-    "Grow wealth safely with secure options like gold",
-    "Achieve short-term goals like emergency funds or big-ticket purchases",
-    "Understand personal finance through simple, engaging content",
-    "Access their money easily when needed"
+    "Know when they’re ready to start applying for jobs",
+    "Stay consistent with daily prep (DSA, system design, HR)",
+    "Get feedback and recognition for mock interviews and projects",
+    "Collaborate with peers at the same skill level",
+    "Get placed faster without blindly applying everywhere"
   ],
   "businessFocus": [
-    "Drive user engagement and reduce churn",
-    "Increase average savings value and AUM",
-    "Expand into new micro-investment categories",
-    "Educate users and improve financial literacy",
-    "Build brand loyalty as an intelligent financial partner"
+    "Reduce average time to placement across user cohorts",
+    "Increase interview-to-offer conversion rates",
+    "Improve % of students who are interview-ready (Readiness Score > 80)",
+    "Boost placement rates and shorten application-to-hire funnel",
+    "Drive repeat hiring and satisfaction from partner companies",
+    "Improve completion rates for daily prep, mocks, and key modules"
   ],
+  "clientPreferences": {
+    "labels": [
+      "Wants Job-Ready Talent",
+      "Relies on Traditional Course Completion Signals"
+    ],
+    "values": [
+      78,
+      22
+    ],
+    "colors": [
+      "#6366F1",
+      "#A5B4FC"
+    ],
+    "description": "Majority of recruiters prefer job-ready candidates with proven consistency over traditional course completion signals."
+  },
   "topPainPoints": [
     {
-      "title": "Set-It-and-Forget-It Engagement Model",
-      "problem": "Users often treat JAR as a passive tool—setting up auto-saves and rarely returning—while the platform lacks features to define and track multiple, diversified goals simultaneously. This limits habit reinforcement, personalization, and overall app stickiness.",
-      "friction": "I set up my savings once and forget about it. I also want to save separately for a phone, bike, and smartwatch—with different amounts and timelines. JAR doesn't help me track or stay accountable for each.",
-      "color": "green",
-      "emoji": "🔎"
+      "emoji": "🧭",
+      "title": "Not Enough Visibility Into Job Readiness or Application Strategy",
+      "problem": "Students put in effort—completing modules, projects, and sessions—but often assume course completion guarantees a job. In reality, they also need mocks, DSA prep, and smart applications. Without a clear view of progress or which roles to focus on, many feel lost or apply to every job without strategy.",
+      "friction": "I’ve done the coursework, but I’m still unsure how much more I have to do—or which companies are actually the right fit. I just end up applying everywhere instead of applying smarter.",
+      "color": "green"
     },
     {
-      "title": "Limited Diversification Options Beyond Digital Gold",
-      "problem": "While JAR is excellent for gold savings, users who have established a savings habit often seek to diversify their investments into other asset classes to optimize returns or align with different risk appetites and long-term financial goals. JAR's current gold-centric focus limits its potential as a holistic financial companion.",
-      "friction": "I've invested in gold, and now I want to diversify. JAR's goal is to be a holistic financial companion, not just gold-oriented, so where else can I invest?",
-      "color": "blue",
-      "emoji": "📊"
+      "emoji": "👥",
+      "title": "Lack of Peer Support & Skill Mismatch",
+      "problem": "Learning alongside peers can be powerful—but when pod members are at very different levels or not equally active, it may slow down momentum. Skill mismatch makes it harder to have meaningful discussions, solve doubts, or stay motivated through peer learning.",
+      "friction": "I think I’d do better if I’m in a pod with folks at my level—or slightly above. That way, we can discuss questions, review solutions, and grow together. As they say, you become like the 5 people you’re surrounded by.",
+      "color": "blue"
     },
     {
-      "title": "Limited Proactive Financial Literacy & Market Context",
-      "problem": "Users, especially first-time investors, lack accessible, bite-sized information about how their gold savings compare to broader market trends or other investment avenues. There's a gap in proactively educating users on optimizing their savings.",
-      "friction": "How is my gold saving really doing compared to inflation or other investments? I don't understand market movements and how they affect my savings.",
-      "color": "pink",
-      "emoji": "📰"
+      "emoji": "🪙",
+      "title": "Effort Toward Community Feels Unrewarded",
+      "problem": "Many students take the time to help others, give feedback, or contribute to the learning community—but that effort isn’t always reflected or rewarded. Without feedback loops or visible gains, it’s easy to deprioritize community contribution in favor of individual prep.",
+      "friction": "I’m putting in effort to help the community, but there’s no tangible result from that—so I often feel like I might as well just focus on my own work.",
+      "color": "yellow"
     },
     {
-      "title": "Lack of Real-Time, Personalized Guidance",
-      "problem": "JAR collects valuable data on user spending and saving patterns, but this data is not fully leveraged to provide real-time, contextualized advice or intelligent upsell opportunities. Generic prompts for increasing savings are less effective than personalized ones.",
-      "friction": "JAR knows my spending, but it doesn't tell me when I could save more, or suggest different investments based on my age or recent financial events like an appraisal.",
-      "color": "yellow",
-      "emoji": "⏰"
+      "emoji": "🔥",
+      "title": "No Daily Structure Leads to Inconsistent Prep",
+      "problem": "Without a daily roadmap, prep can feel chaotic—some days are packed, others go idle. This inconsistency affects focus, confidence, and long-term recall. Especially before interviews, students may feel the need for a well-planned, focused sprint.",
+      "friction": "I think having a simple, structured 30-day prep roadmap before interviews would really help me stay consistent and know what to tackle each day.",
+      "color": "pink"
     }
   ],
-    "proposedSolutions": [
-      {
-        "emoji": "🎯",
-        "title": "Gamified Goal-Based Savings",
-        "solution": "Multi-Goal Tracking + Habit-Forming Engagement",
-        "whatItDoes": "Allows users to create multiple 'Goal Jars' (e.g., Bike, Phone, Travel) with separate targets, contribution plans, and timelines. Adds gamified streaks and rewards for consistent saving across each goal. Users earn coins or gold credits for saving regularly, which boosts habit formation and encourages higher engagement.",
-        "whyItHelps": "Combines personalized motivation and fun to make saving feel more tangible and rewarding. Drives app stickiness, increases daily/weekly interactions, and helps users stay accountable to diverse financial goals.",
-        "example": "You've saved for 12 days straight in your 'Phone Jar'—keep the streak alive! You're 80% to your goal. Earn 5 coins today by increasing your savings by ₹20.",
-        "color": "green"
-      },
-      {
-        "emoji": "📈",
-        "title": "AI-Driven Micro-Investment Diversification",
-        "solution": "Smart Recommendations Beyond Gold",
-        "whatItDoes": "Analyzes user patterns and goals to recommend alternative micro-investments (e.g., mutual fund SIPs, FDs). Provides simple, risk-aware comparisons and highlights benefits like faster growth or better fit for short-term vs long-term goals.",
-        "whyItHelps": "Unlocks more return potential and reduces dependency on gold. Makes JAR a more complete financial partner and grows AUM through smarter investment matching.",
-        "example": "You're saving ₹100/day for your bike. Based on your timeline, we suggest adding a micro-SIP too in Fund A (low risk, 12% expected returns, 1% greated than Gold) to reach your goal 4 months earlier.",
-        "color": "blue"
-      },
-      {
-        "emoji": "📚",
-        "title": "Bite Sized News - Financial Literacy",
-        "solution": "Real-Time Benchmarks & Digestible Learning",
-        "whatItDoes": "Delivers short financial education modules based on user activity. Compares gold savings with mutual fund benchmarks or market trends. Adds weekly digest (e.g., Greed Index) with simple interpretation relevant to user portfolios.",
-        "whyItHelps": "Improves financial confidence and helps users make smarter decisions. Translates market noise into personalized, understandable insights.",
-        "example": "Your gold savings beat the Nifty50 index this month. The Greed Index is at 78—historically, this signals market caution. Consider rebalancing soon.",
-        "color": "yellow"
-      },
-      {
-        "emoji": "🤖",
-        "title": "AI-Powered Nudges & Portfolio Diagnostics",
-        "solution": "Personalized Insights + Smart Upsell",
-        "whatItDoes": "Detects life events or cash flow changes (e.g., bonuses), recommends actions like increasing savings, rebalancing, or switching funds. Analyzes holdings in real-time and gives detailed rationale behind AI's suggestions (e.g., high expense ratio, sector bias, poor drawdowns).",
-        "whyItHelps": "Replaces generic nudges with intelligent, timely, and helpful suggestions. Builds trust and drives higher lifetime value with contextual upsells.",
-        "example": "Your bonus hit your bank account. Consider increasing savings by ₹500/week. Also, Fund X underperformed with high volatility—here's a better option with 5-year stability.",
-        "color": "pink"
-      }
-    ],
+  "proposedSolutions": [
+    {
+      "emoji": "🧭",
+      "title": "Readiness Score + AutoApply – Smart Job Matching",
+      "solution": "Progress Visibility + AutoApply = Job Acceleration",
+      "whatItDoes": "Combines resume quality, GitHub activity, peer reviews, mock performance, and coin balance into a dynamic 100-point score. Students crossing 80+ unlock the 'Interview Ready' tag. The system then auto-applies to relevant jobs based on skills, preferences, and Readiness Score—tracking status and giving suggestions when there's no callback.",
+      "whyItHelps": "Turns effort into outcome. Gives direction via a measurable score and automates the job application process—helping students focus on improving rather than hunting.",
+      "example": "Your Readiness Score is 84. Based on your track, we’ve applied to 6 companies this week—2 viewed your profile. Complete one project to boost visibility further.",
+      "color": "green"
+    },
+    {
+      "emoji": "👥",
+      "title": "Squad Goals – Skill-Matched Peer Pods",
+      "solution": "Level-Aligned Pods + Weekly Rewards",
+      "whatItDoes": "Auto-assigns students into 5-person pods based on similar Readiness Scores and peer ratings. Weekly challenges include mocks, PR reviews, and project updates. Pods self-rate at week’s end, and top pods earn bonus coins.",
+      "whyItHelps": "Fuels accountability, fosters collaboration, and keeps students surrounded by others at a similar (or slightly higher) level — driving faster growth and healthy competition.",
+      "example": "Your pod nailed every weekly activity — each member just earned 75 bonus coins and took the #1 spot on the pod leaderboard.",
+      "color": "blue"
+    },
+    {
+      "emoji": "🪙",
+      "title": "Grind to Shine – Coin-Based Motivation System",
+      "solution": "Coins = Proof of Effort",
+      "whatItDoes": "Rewards students with coins for consistent actions—completing modules, giving peer feedback, finishing mocks, or pushing projects to GitHub. Coins boost your Readiness Score and improve placement visibility.",
+      "whyItHelps": "Turns invisible effort into visible credibility. Creates a positive loop where consistency is recognized, progress feels tangible, and students stay engaged.",
+      "example": "You’ve earned 400+ coins this month through mocks and peer reviews—your profile just entered the Top 5% for recruiter visibility.",
+      "color": "yellow"
+    },
+    {
+      "emoji": "🔥",
+      "title": "Daily Spark – Interview Prep Tracker",
+      "solution": "Daily Discipline = Long-Term Readiness",
+      "whatItDoes": "Pushes one DSA, one System Design, and one HR question every day. Tracks daily completion streaks and unlocks coins + badges for consistency. Visual dashboard shows your prep discipline over time.",
+      "whyItHelps": "Eliminates overthinking and procrastination. Keeps prep light, repeatable, and confidence-boosting—especially in the 30-day lead-up to interviews.",
+      "example": "You’re on a 10-day streak! You’ve unlocked 25 bonus coins + the ‘Prep Beast’ badge. Let’s keep the streak alive!",
+      "color": "pink"
+    }
+  ],
   "featurePrioritization": [
-    { "title": "🎯 Gamified Goal-Based Savings", "description": "High reach, high impact." },
-    { "title": "📊 AI-Driven Diversification", "description": "Boosts AUM and product expansion; medium effort and confidence. Exists Elsewhere." },
-    { "title": "📚 Bite Sized News", "description": "Quickest to ship" },
-    { "title": "🤖 AI Nudges & Diagnostics", "description": "Strategic bet, longer-term payoff - Flagship Feature." },
-    { "title": "⚡ AI Chatbot", "description": "Lower priority due to high effort" }
-  ],
-  "phase1Features": [
-    "Rule-based contextual alerts (e.g., fund manager change, high AUM churn)",
-    "Weekly summaries with market insights + portfolio health",
-    "Basic nudges (e.g., 'Consider rebalancing now due to X.')"
-  ],
-  "phase2Features": [
-    "LLM-powered assistant for conversational insights",
-    "Predictive analytics for financial planning needs",
-    "Real-time product matching & nudged product flows"
+    {
+      "title": "🪙 Grind to Shine – Coin-Based Motivation System",
+      "description": "High reach, high impact. Acts as the core gamified loop that drives effort, reputation, and recruiter visibility."
+    },
+    {
+      "title": "🔥 Daily Spark – Interview Prep Tracker",
+      "description": "Quickest to ship. Lightweight structure that boosts daily consistency and interview readiness momentum."
+    },
+    {
+      "title": "🧭 Readiness Score + AutoApply – Smart Job Matching Engine",
+      "description": "Drives job outcomes and student motivation. Medium effort with high ROI through automation and trust-building."
+    },
+    {
+      "title": "👥 Squad Goals – Skill-Matched Peer Pods",
+      "description": "Social-first engagement. Takes effort to get right, but builds accountability, depth, and cohort stickiness long-term."
+    },
+    {
+      "title": "🧠 AI-Powered Mock Interview Feedback",
+      "description": "Lower priority due to higher complexity. Strong differentiator if done well, but requires mature infra + NLP tuning."
+    }
   ],
   "successMetrics": [
     {
       "title": "🚀 Engagement & Adoption",
       "metrics": [
-        "DAU/WAU of Jar Compass Features (goal jars, nudges, gamification, recommendations)",
-        "Average Session Duration (JAR App)",
-        "CTR on AI-Generated Nudges/Recommendations",
-        "Gamification Metrics (streak length, coin accumulation, reward redemption rates)"
+        "DAU/WAU of Readiness Score, Coin System, Peer Pods, and Daily Prep",
+        "Average Weekly Active Minutes per User",
+        "Completion Rate of Daily Prep Modules (DSA, SD, HR)",
+        "Coins Earned per User per Week",
+        "% of Students Participating in Pods (and Avg Meetings/Week)"
       ]
     },
     {
-      "title": "💰 Savings & Investment",
+      "title": "🎓 Learning & Readiness Progress",
       "metrics": [
-        "Average Savings Value (ASV) per User",
-        "Assets Under Management (AUM) Growth",
-        "Micro-Investment Diversification Rate",
-        "Goal Attainment Rate (per Goal Jar)",
-        "Savings Increase after Appraisal Nudge",
-        "Portfolio Health Score Improvement"
+        "% of Students with Readiness Score > 80",
+        "Average Readiness Score Growth Over 30 Days",
+        "Resume + GitHub + Project Completion Rate",
+        "Mock Interview Completion Rate (Peer + AI)",
+        "# of Projects Reviewed/Submitted per Student"
       ]
     },
     {
-      "title": "📈 Retention & Business Growth",
+      "title": "💼 Placement Outcomes & Retention",
       "metrics": [
-        "User Retention Rate (Cohort Analysis)",
-        "Churn Rate Reduction",
-        "Net Promoter Score (NPS) / Customer Satisfaction (CSAT)",
-        "Conversion Rate (Micro-Saver to Diversified Investor)",
-        "Customer Lifetime Value (CLTV)"
+        "Average Time to Placement (From Sign-Up to Offer)",
+        "Interview to Offer Conversion Rate",
+        "% of Job Applications via AI Auto-Apply with Shortlist",
+        "NPS/CSAT from Students Post-Placement",
+        "Returning Users After Placement (Upskilling, Mentoring)"
       ]
     }
   ],
   "nextSteps": [
     {
-      "icon": "🔍",
-      "title": "Deep Dive into User Research",
-      "description": "Interview diverse JAR users to uncover key financial goals, pain points beyond gold, and expectations around multi-goal tracking and personalization."
+      "icon": "🧑‍🎓",
+      "title": "Conduct Student & Alumni Interviews",
+      "description": "Engage with current learners and recent graduates to uncover motivation blockers, peer learning friction, and expectations from career-readiness tracking."
     },
     {
-      "icon": "🗄️",
-      "title": "Data Infrastructure Assessment",
-      "description": "Work with data teams to evaluate current infrastructure for supporting AI features, real-time analytics, and new data sources."
+      "icon": "🧠",
+      "title": "Define Readiness Score Formula",
+      "description": "Work with mentors and placement teams to finalize the weightage model for the Readiness Score based on resume quality, projects, coins, peer ratings, and mock interview data."
     },
     {
-      "icon": "🧩",
-      "title": "Prototype Development & A/B Testing",
-      "description": "Create prototypes of AI features like goal tracking and recommendations, then A/B test with users to validate assumptions."
+      "icon": "🧪",
+      "title": "Build & Test Coin System + Daily Tracker",
+      "description": "Develop an MVP for coin-based incentives and the daily interview prep tracker. A/B test with a controlled cohort to measure engagement uplift and completion rates."
     },
     {
-      "icon": "🤝",
-      "title": "Partnership Exploration",
-      "description": "Identify potential partners for new micro-investment products (e.g., mutual fund houses for micro-SIPs) and explore technical integration requirements."
+      "icon": "🤖",
+      "title": "Mock Interview AI Scope Definition",
+      "description": "Collaborate with tech leads to define feasibility and roadmap for real-time AI-based mock feedback—starting with basic peer review augmentation before full automation."
     }
   ],
-  "aboutMeDescription": "This project, Jar Compass, is a testament to my capabilities as a Product Manager. My passion lies in building innovative solutions that solve real-world problems and drive significant business value. I thrive at the intersection of business strategy, technology, and user experience.",
+  "aboutMeDescription": "This project, Newton School – Placement Fast Lane, showcases my ability to build structured, high-impact solutions for career acceleration. I thrive on identifying deep user problems, translating them into system-level features like coin-based motivation, readiness scoring, and peer-led engagement loops. My strength lies in crafting products that are equal parts strategic, data-backed, and delightful to use.",
   "keySkills": [
-    { "title": "💡 Strategic Product Vision", "description": "Ability to identify market opportunities and define compelling product strategies." },
-    { "title": "🤝 User-Centric Design", "description": "Deep empathy for user needs and a commitment to delivering intuitive experiences." },
-    { "title": "📊 Data-Driven Decision Making", "description": "Proficient in leveraging data and frameworks (like RICE) for informed prioritization." },
-    { "title": "🛠️ Cross-Functional Collaboration", "description": "Experience in defining requirements and working with engineering, design, and business teams." },
-    { "title": "🔄 Agile Development", "description": "Practical understanding of iterative development and continuous improvement methodologies." }
+    {
+      "title": "💡 Strategic Product Vision",
+      "description": "Ability to identify market opportunities and define compelling product strategies."
+    },
+    {
+      "title": "🤝 User-Centric Design",
+      "description": "Deep empathy for user needs and a commitment to delivering intuitive experiences."
+    },
+    {
+      "title": "📊 Data-Driven Decision Making",
+      "description": "Proficient in leveraging data and frameworks (like RICE) for informed prioritization."
+    },
+    {
+      "title": "🛠️ Cross-Functional Collaboration",
+      "description": "Experience in defining requirements and working with engineering, design, and business teams."
+    },
+    {
+      "title": "🔄 Agile Development",
+      "description": "Practical understanding of iterative development and continuous improvement methodologies."
+    }
   ],
   "linkedinUrl": "https://www.linkedin.com/in/anishguruvelli/",
-  "resumeUrl": "https://drive.google.com/file/d/1d-7u4L4ZZhomF-tpMLOqF6L2My6meYZ8/view?usp=sharing",
+  "resumeUrl": "https://drive.google.com/file/d/1VIsITKR4UA5V8luDj5H2wnky1aBWs2Uc/view?usp=sharing",
   "finalRecommendation": {
     "title": "7️⃣ Final Recommendation & Roadmap",
-    "subtitle": "JAR Compass: Next Steps",
+    "subtitle": "Newton School - Placement Fast Lane: Next Steps",
     "topBets": [
       {
         "icon": "🚀",
@@ -227,27 +263,22 @@
         "description": "Bite-sized learning, transparent market benchmarks, and weekly market summaries."
       }
     ],
-   "quickWins": [
-    "Enable users to create and track multiple concurrent financial goals with visual progress.",
-    "Introduce saving streaks with basic rewards like badges or coins redeemable for gold or perks.",
-    "Show gold savings growth with monthly performance summaries compared to inflation.",
-    "Offer age-based goal suggestions (e.g., retirement, career development).",
-    "Share short, curated market updates covering broad trends.",
-    "Send bite-sized news updates related to specific user holdings.",
-    "Personalised Notifications for better user engagement and stickiness."
-  ],
-  "longTermBets": [
-    "Use AI to guide multi-goal savings with predictive timelines and spending-based nudges.",
-    "Recommend personalized micro-investments (e.g., SIPs, FDs) based on user goals and risk profile.",
-    "Analyse user transaction history and detect financial events (e.g., appraisal bonus) and suggest smart savings actions.",
-    "Build interactive financial literacy modules with quizzes and a weekly market compass.",
-    "Analyze user portfolios to flag issues and explain better options using clear comparisons.",
-    "Add a conversational AI chatbot to answer finance questions in simple, local language."
-  ]
-  },
-  "clientPreferences": {
-    "labels": ["Want AI-Driven Insights", "Traditional Approach"],
-    "values": [78, 22],
-    "colors": ["#6366F1", "#A5B4FC"]
+    "quickWins": [
+      "Enable users to create and track multiple concurrent financial goals with visual progress.",
+      "Introduce saving streaks with basic rewards like badges or coins redeemable for gold or perks.",
+      "Show gold savings growth with monthly performance summaries compared to inflation.",
+      "Offer age-based goal suggestions (e.g., retirement, career development).",
+      "Share short, curated market updates covering broad trends.",
+      "Send bite-sized news updates related to specific user holdings.",
+      "Personalised Notifications for better user engagement and stickiness."
+    ],
+    "longTermBets": [
+      "Use AI to guide multi-goal savings with predictive timelines and spending-based nudges.",
+      "Recommend personalized micro-investments (e.g., SIPs, FDs) based on user goals and risk profile.",
+      "Analyse user transaction history and detect financial events (e.g., appraisal bonus) and suggest smart savings actions.",
+      "Build interactive financial literacy modules with quizzes and a weekly market Placement Fastlane.",
+      "Analyze user portfolios to flag issues and explain better options using clear comparisons.",
+      "Add a conversational AI chatbot to answer finance questions in simple, local language."
+    ]
   }
-} 
+}
